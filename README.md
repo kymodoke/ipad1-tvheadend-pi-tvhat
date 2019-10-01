@@ -28,3 +28,8 @@ Then an interface to select channels and lunch the stream to player is needed...
 - The old Safari browser supports Jquery up to version 1.12.4
 - The old Safari browser does support "vlc://" URL scheme to send video url to VLC
 - The old Safari browser support HTML5 Video element to send video url to Quicktime
+
+## Random notes
+
+- available version of Tvheadend on Raspbian Buster repositories is 4.2, but it doesn't support SPAWN in stream profiles -> solution: tvheadend_4.3-1805_gdca46eedd_armhf.deb for Raspbian Buster
+https://cloud.disroot.org/s/y3YtbkrgFodCwdH (from reference https://tvheadend.org/issues/5673 )
