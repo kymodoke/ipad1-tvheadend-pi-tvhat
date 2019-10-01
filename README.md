@@ -33,3 +33,14 @@ Then an interface to select channels and lunch the stream to player is needed...
 
 - available version of Tvheadend on Raspbian Buster repositories is 4.2, but it doesn't support SPAWN in stream profiles -> solution: tvheadend_4.3-1805_gdca46eedd_armhf.deb for Raspbian Buster
 https://cloud.disroot.org/s/y3YtbkrgFodCwdH (from reference https://tvheadend.org/issues/5673 )
+
+For Raspberry Pi2 or Pi Zero, when using a Wifi USB dongle to enable Wi-Fi Automatic Reconnect:
+
+In **/etc/network/interfaces** put:
+
+    allow-hotplug wlan0
+    iface wlan0 inet manual
+    wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
+    iface default inet dhcp
+
+*Source : https://tech.scargill.net/pi-zero-wi-fi-automatic-reconnect/*
